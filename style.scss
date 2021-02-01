@@ -45,6 +45,8 @@ html {
 }
 
 .name1 {
+    overflow: visible;
+    margin-right: -5rem;
     font-size: 0.38em;
     display: inline-flex;
 
@@ -86,9 +88,9 @@ html {
 .btn {
     overflow: hidden;
     z-index: 3;
-    position: absolute;
-    bottom: 2.9rem;
-    right: 15rem;
+    position: relative;
+    bottom: 2.5rem;
+    right: -3rem;
     width: 2.6rem;
     height: 1.2rem;
     background-color: white;
