@@ -1,1 +1,196 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  color: #202046;
+}
+
+.bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+  background: url(/images/pattern-curve.svg) no-repeat fixed left bottom;
+}
+
+.container-texte {
+  z-index: 2;
+  display: block;
+  overflow: visible;
+  background: url(/images/pattern-quotes.svg) no-repeat;
+  background-size: 120px 90px;
+  background-position: 40% top;
+  padding-top: 1.5rem;
+  padding-left: 2rem;
+}
+
+#texte2 {
+  display: none;
+}
+
+.texte1 {
+  z-index: 2;
+  display: block;
+  font-weight: 300;
+  margin-right: -3.5rem;
+}
+
+.name1 {
+  font-size: 0.38em;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.name1 h1 {
+  color: #202046;
+}
+
+.name1 h2 {
+  margin-left: 10px;
+  color: #babacf;
+}
+
+.container-img {
+  z-index: 1;
+  margin-top: 1rem;
+  background: url(/images/pattern-bg.svg) no-repeat;
+  background-size: contain;
+  margin-right: 2rem;
+}
+
+.img-user {
+  margin: 1.5rem;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 15px 10px -10px #b9b8b8;
+          box-shadow: 0 15px 10px -10px #b9b8b8;
+}
+
+.pattern {
+  position: absolute;
+  z-index: -2;
+}
+
+.btn {
+  overflow: hidden;
+  z-index: 3;
+  position: absolute;
+  bottom: 2.9rem;
+  right: 15rem;
+  width: 2.6rem;
+  height: 1.2rem;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 15px 10px -10px #b9b8b8;
+          box-shadow: 0 15px 10px -10px #b9b8b8;
+}
+
+.btn-left {
+  background: url(/images/icon-prev.svg) no-repeat center;
+}
+
+.btn-right {
+  background: url(/images/icon-next.svg) no-repeat center;
+}
+
+.btn-right, .btn-left {
+  cursor: pointer;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  overflow: hidden;
+}
+
+.btn-left:hover, .btn-right:hover {
+  overflow: hidden;
+  border: none;
+  background-color: #d8d8d8;
+}
+
+@media screen and (max-width: 1024px) {
+  .bg {
+    overflow: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container-img {
+    margin-right: 0;
+  }
+  .img-user {
+    margin: 1.5rem;
+    width: 8rem;
+    height: 8rem;
+  }
+  .container-texte {
+    padding-top: 0;
+    padding-left: 0;
+    padding: 1rem 1rem;
+    margin: 0;
+    background-size: 60px;
+    background-position: 50% top;
+    padding-top: 1rem;
+  }
+  .texte1 {
+    text-align: center;
+    margin-right: 0;
+    font-size: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .name1 {
+    display: inline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .name1 h2 {
+    margin-left: 0;
+  }
+  .btn {
+    position: relative;
+    bottom: 2.5rem;
+    right: -38%;
+  }
+}
+
+@media screen and (min-width: 445px) {
+  .container-texte {
+    padding-top: 0;
+    padding-left: 0;
+    padding: 2rem 4rem;
+    margin: 0;
+    background-size: 60px;
+    background-position: 50% top;
+    padding-top: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
